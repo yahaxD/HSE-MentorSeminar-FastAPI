@@ -134,7 +134,7 @@ See full documentaion on ***http://localhost/docs***
 		cd todo_app
 	```
 
-2. **Using Docker**
++ **Using Docker**
 
 	2.1 **Build Docker Image**
 
@@ -148,7 +148,7 @@ See full documentaion on ***http://localhost/docs***
 		docker run -d -p 8000:80 -v todo_data:/app/data --name todo-service todo-service:latest
 	```
 
-2. **Without Docker**
++ **Without Docker**
 
 	2.1 **Create Virtual Environment**
 
