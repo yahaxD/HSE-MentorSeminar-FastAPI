@@ -23,46 +23,46 @@ A simple and efficient service for shortening long URLs using FastAPI and SQLAlc
  
 * Root Information
   
-	GET /
+	**GET /**
 
-	Returns information about the app and available endpoints.
+	*Returns information about the app and available endpoints.*
 	
 * Shorten a URL
   
-	POST /shorten
+	**POST /shorten**
 
 	Request Body: {"url": "https://example.com"}
 
-	Accepts a full URL and returns the shortened URL.
+	*Accepts a full URL and returns the shortened URL.*
 	
 * Redirect to Full URL
   
-	GET /{short_id}
+	**GET /{short_id}**
 
-	Redirects to the original URL.
+	*Redirects to the original URL.*
 
 * Get Information for a Short URL
   
-	GET /stats/{short_id}
+	**GET /stats/{short_id}**
 
-	Returns short identifier and the original full URL.
+  	*Returns short identifier and the original full URL.*
 	
 * List All URLs
   
-	GET /urls/all
+	**GET /urls/all**
 
-	Returns a list of all short URLs and their full URLs.
+	*Returns a list of all short URLs and their full URLs.*
 
 * Delete a Short URL
   
-	DELETE /delete/{short_id}
+	**DELETE /delete/{short_id}**
 
-	Deletes a specific short URL.
+	*Deletes a specific short URL.*
 	
 *See full documentaion on* ***http://localhost/docs***
 
 <div align="center">
-    <img alt="image" src="https://github.com/user-attachments/assets/00572278-1deb-4446-a5ba-17e0c251fd97" width="640">
+    <img alt="image" src="https://github.com/user-attachments/assets/00572278-1deb-4446-a5ba-17e0c251fd97" width="960">
 </div>
 	
 ## 📦 Installation
@@ -98,7 +98,8 @@ A simple and efficient service for shortening long URLs using FastAPI and SQLAlc
    ```
    
 5. **Access the application**
-   Go to the address: http://localhost:8000 .
+   
+   Go to the address: ***http://localhost:8000*** .
    
 
 
