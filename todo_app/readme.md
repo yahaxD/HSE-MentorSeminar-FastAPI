@@ -152,13 +152,15 @@ See full documentaion on ***http://localhost/docs***
 #####  **Without Docker**
 
 2.1 **Create Virtual Environment**
-
+	
+	~~~
 	```bash
 	python3 -m venv venv
 	source venv/bin/activate  # For Linux/macOS
 	# or
 	source venv\Scripts\activate  # For Windows
 	```
+	~~~
 	
 2.2 **Install Dependencies**
 	
