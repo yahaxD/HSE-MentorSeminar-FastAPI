@@ -134,41 +134,38 @@ See full documentaion on ***http://localhost/docs***
 	cd todo_app
 	```
 
-#####  **Using Docker**
+2.  **Using Docker**
 
-2.1 **Build Docker Image**
+   2.1 **Build Docker Image**
 
 	```bash
 	docker build -t todo-service:latest todo_app/  
 	```
 	
-2.2 **Run Docker Image**
+	2.2 **Run Docker Image**
 	
 	```bash
 	docker run -d -p 8000:80 -v todo_data:/app/data --name todo-service todo-service:latest
 	```
-	
 
-#####  **Without Docker**
+2.  **Without Docker**
 
-2.1 **Create Virtual Environment**
-	
-	~~~
+	2.1 **Create Virtual Environment**
+
 	```bash
 	python3 -m venv venv
 	source venv/bin/activate  # For Linux/macOS
 	# or
 	source venv\Scripts\activate  # For Windows
 	```
-	~~~
 	
-2.2 **Install Dependencies**
+	2.2 **Install Dependencies**
 	
 	```bash
 	pip install -r requirements.txt
 	```
 	
-2.3 **Run the Application**
+	2.3 **Run the Application**
 	
 	```bash
 	uvicorn main:app --host 0.0.0.0 --port 80 --reload
@@ -177,7 +174,6 @@ See full documentaion on ***http://localhost/docs***
 3. **Access the application**
    
    Go to the address: ***http://localhost:80*** .
-   
 
 
 ### Via DockerHub
@@ -191,8 +187,6 @@ See full documentaion on ***http://localhost/docs***
 2. **Access the application**
    
    Go to the address: ***http://localhost:80*** .
-
-
 
 ## License
 
