@@ -168,7 +168,7 @@ See full documentaion on ***http://localhost:80/docs***
 	2.3 **Run the Application**
 	
 	```bash
-		uvicorn main:app --host 0.0.0.0 --port 80 --reload
+		python -m uvicorn main:app --host 0.0.0.0 --port 80 --reload
 	```
 
 3. **Access the application**
