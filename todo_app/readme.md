@@ -145,7 +145,7 @@ See full documentaion on ***http://localhost/docs***
 	2.2 **Run Docker Image**
 	
 	```bash
-		docker run -d -p 8000:80 -v todo_data:/app/data --name todo-service todo-service:latest
+		docker run -d -p 80:80 -v todo_data:/app/data --name todo-service todo-service:latest
 	```
 
 + **Without Docker**
@@ -181,7 +181,7 @@ See full documentaion on ***http://localhost/docs***
 1. **Clone and Run the Image**
 
 	```bash
-		docker run -d -p 8000:80 -v todo_data:/app/data --name todo-service yahaxd/todo-service:latest
+		docker run -d -p 80:80 -v todo_data:/app/data --name todo-service yahaxd/todo-service:latest
 	```
 
 2. **Access the application**
