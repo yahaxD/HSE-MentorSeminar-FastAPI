@@ -76,7 +76,7 @@ See full documentaion on ***http://localhost/docs***
 	cd shorturl_app
 	```
 
-#####  Using Docker
+#####  **Using Docker**
 2.1 **Build Docker Image**
 
 	```bash
@@ -90,7 +90,7 @@ See full documentaion on ***http://localhost/docs***
 	```
 	
 
-#####  Without Docker
+#####  **Without Docker**
 
 2.1 **Create Virtual Environment**
 
