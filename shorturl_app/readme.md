@@ -65,7 +65,7 @@ A simple and efficient service for shortening long URLs using FastAPI and SQLAlc
 
 	*Deletes a specific short URL.*
 	
-See full documentaion on ***http://localhost/docs***
+See full documentaion on ***http://localhost:81/docs***
 
 <div align="center">
     <img alt="image" src="https://github.com/user-attachments/assets/00572278-1deb-4446-a5ba-17e0c251fd97" width="960">
@@ -93,7 +93,7 @@ See full documentaion on ***http://localhost/docs***
 	2.2 **Run Docker Image**
 	
 	```bash
-		docker run -d -p 8001:80 -v shorturl_data:/app/data --name shorturl-service shorturl-service:latest
+		docker run -d -p 81:80 -v shorturl_data:/app/data --name shorturl-service shorturl-service:latest
 	```
 	
 
@@ -117,12 +117,12 @@ See full documentaion on ***http://localhost/docs***
 	2.3 **Run the Application**
 	
 	```bash
-		uvicorn main:app --host 0.0.0.0 --port 80 --reload
+		uvicorn main:app --host 0.0.0.0 --port 81 --reload
 	```
 
 3. **Access the application**
    
-   Go to the address: ***http://localhost:80*** .
+   Go to the address: ***http://localhost:81*** .
    
 
 
@@ -131,12 +131,12 @@ See full documentaion on ***http://localhost/docs***
 1. **Clone and Run the Image**
 
 	```bash
-		docker run -d -p 8001:80 -v shorturl_data:/app/data --name shorturl-service yahaxd/shorturl-service:latest
+		docker run -d -p 81:80 -v shorturl_data:/app/data --name shorturl-service yahaxd/shorturl-service:latest
 	```
 
 2. **Access the application**
    
-   Go to the address: ***http://localhost:80*** .
+   Go to the address: ***http://localhost:81*** .
 
 
 
