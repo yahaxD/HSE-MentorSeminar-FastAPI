@@ -148,7 +148,7 @@ See full documentaion on ***http://localhost/docs***
 		docker run -d -p 8000:80 -v todo_data:/app/data --name todo-service todo-service:latest
 	```
 
-3. **Without Docker**
+2. **Without Docker**
 
 	2.1 **Create Virtual Environment**
 
