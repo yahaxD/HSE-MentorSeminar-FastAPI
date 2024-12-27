@@ -136,7 +136,7 @@ See full documentaion on ***http://localhost/docs***
 
 2.  **Using Docker**
 
-   2.1 **Build Docker Image**
+   	2.1 **Build Docker Image**
 
 	```bash
 	docker build -t todo-service:latest todo_app/  
