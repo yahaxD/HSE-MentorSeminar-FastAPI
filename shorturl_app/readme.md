@@ -110,8 +110,8 @@ See full documentaion on ***http://localhost/docs***
 2.3 **Run the Application**
 	
 	```bash
-   uvicorn main:app --host 0.0.0.0 --port 8000 --reload
-   ```
+   	uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+   	```
 
 3. **Access the application**
    
