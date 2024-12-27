@@ -59,7 +59,7 @@ A simple and efficient service for shortening long URLs using FastAPI and SQLAlc
 
 	*Deletes a specific short URL.*
 	
-*See full documentaion on* ***http://localhost/docs***
+See full documentaion on ***http://localhost/docs***
 
 <div align="center">
     <img alt="image" src="https://github.com/user-attachments/assets/00572278-1deb-4446-a5ba-17e0c251fd97" width="960">
@@ -76,34 +76,61 @@ A simple and efficient service for shortening long URLs using FastAPI and SQLAlc
 	cd shorturl_app
 	```
 
-2. **Create Virtual Environment**
+#####  Using Docker
+2.1 **Build Docker Image**
+
+	```bash
+	docker build -t shorturl-service:latest shorturl_app/  
+	```
+	
+2.2 **Run Docker Image**
+	
+	```bash
+	docker run -d -p 8001:80 -v shorturl_data:/app/data --name shorturl-service shorturl-service:latest
+	```
+	
+
+#####  Without Docker
+
+2.1 **Create Virtual Environment**
 
 	```bash
 	python3 -m venv venv
 	source venv/bin/activate  # For Linux/macOS
 	# or
-	venv\Scripts\activate  # For Windows
+	source venv\Scripts\activate  # For Windows
 	```
 	
-3. **Install Dependencies**
+2.2 **Install Dependencies**
 	
 	```bash
 	pip install -r requirements.txt
 	```
 	
-4. **Running the Application**
+2.3 **Run the Application**
 	
 	```bash
    uvicorn main:app --host 0.0.0.0 --port 8000 --reload
    ```
-   
-5. **Access the application**
+
+3. **Access the application**
    
    Go to the address: ***http://localhost:8000*** .
    
 
 
 ### Via DockerHub
+
+1. **Clone and Run the Image**
+
+	```bash
+	docker run -d -p 8001:80 -v shorturl_data:/app/data --name shorturl-service yahaxd/shorturl-service:latest
+	```
+
+2. **Access the application**
+   
+   Go to the address: ***http://localhost:8000*** .
+
 
 
 ## License
